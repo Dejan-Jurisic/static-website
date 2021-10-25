@@ -130,13 +130,22 @@ body {
 /********************************************/
 
 .section-hero {
-    background-image: url(../css/img/hero.png);
-    background-size: cover;
-    background-position: center;
-    height: 80rem;
+    background: no-repeat url(../css/img/hero.png) 50% / 100%;
+}
+
+.hero-background {
+    vertical-align: top;
+    width: 100%;
+    /* max width */
+    opacity: 0;
+    /* make it transparent */
 }
 
 .hero-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
     padding: 31rem 0 0 34rem;
 }
 
