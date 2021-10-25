@@ -51,24 +51,9 @@ body {
     color: #555;
 }
 
-/* Hero Section */
-
-.section-hero {
-    background-image: url(../css/img/hero.png);
-    background-size: cover;
-    background-position: center;
-    height: 80rem;
-}
-
-.hero-box {
-    position: relative;
-}
-
-.hero-text-box {
-    position: absolute;
-    top: 31rem;
-    left: 34rem;
-}
+/********************************************/
+/* GENERAL REUSABLE COMPONENTS */
+/********************************************/
 
 .heading-primary {
     font-size: 5.2rem;
@@ -79,18 +64,6 @@ body {
     margin-bottom: 3.2rem;
 }
 
-.vertical-line {
-    color: #1fffff;
-    font-weight:lighter;
-}
-
-.hero-description {
-    font-size: 2rem;
-    line-height: 2.6rem;
-    margin-bottom: 3.2rem;
-    color: #fff;
-}
-
 .btn:link,
 .btn:visited {
     background-color: #00bcfe;
@@ -99,5 +72,82 @@ body {
     padding: 2rem 4rem;
     color: #fff;
     /* Trick to add border in side */
-    /* box-shadow: inset 0 0 0 3px #fff; */  
+    /* box-shadow: inset 0 0 0 3px #fff; */
+}
+
+/********************************************/
+/* HEADER */
+/********************************************/
+.header {
+    background-color: #252931;
+    height: 9.6rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Because we want header to be sticky, that's why height is fixed */
+    height: 9.6rem;
+    padding: 0 16rem;
+}
+
+.logo {
+    height: 3.2rem;
+}
+
+.nav-box {
+    display: flex;
+    gap: 9.6rem;
+}
+
+.main-nav-list,
+.language-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited,
+.language-nav-link:link,
+.language-nav-link:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active,
+.language-nav-link:hover,
+.language-nav-link:active {
+    border-bottom: 3px solid #2cc1db;
+    padding-bottom: 3.8rem;
+}
+
+/********************************************/
+/* HERO SECTION */
+/********************************************/
+
+.section-hero {
+    background-image: url(../css/img/hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 80rem;
+}
+
+.hero-box {
+    padding: 31rem 0 0 34rem;
+}
+
+.vertical-line {
+    color: #1fffff;
+    font-weight: lighter;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 3.2rem;
+    color: #fff;
 }
