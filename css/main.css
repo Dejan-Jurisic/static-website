@@ -49,6 +49,7 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    background-color: #232529;
 }
 
 /********************************************/
@@ -62,6 +63,14 @@ body {
     color: #fff;
     letter-spacing: -0.5px;
     margin-bottom: 3.2rem;
+}
+
+.subheading {
+    font-size: 4.4rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+    letter-spacing: -0.5px;
 }
 
 .btn:link,
@@ -137,6 +146,7 @@ body {
     width: 100%;
     height: 0;
     padding-top: 45%;
+    /* (img-height / img-width * container-width) */
 }
 
 .hero-box {
@@ -155,4 +165,71 @@ body {
     line-height: 2.6rem;
     margin-bottom: 3.2rem;
     color: #fff;
+}
+
+/********************************************/
+/* SERVICES SECTION */
+/********************************************/
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-subheading {
+    margin: 7.4rem 0 2.4rem 0;
+}
+
+.blue-bull {
+    padding-top: 22px;
+    color: #26ddff;
+}
+
+.services-description {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 9.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.services-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-table--col5>.services-table-cell {
+    width: 20%;
+}
+
+.services-table-cell {
+    flex-grow: 1;
+    width: 100%;
+    overflow: hidden;
+    border-right: solid 1px #393b3f;
+    padding: 0 3.2rem;
+}
+
+.services-table-cell:nth-child(-1n+5) {
+    border-bottom: solid 1px #393b3f;
+    padding-bottom: 2.4rem;
+}
+.services-table-cell:nth-child(1n+6) {
+    border-right: solid 1px #393b3f;
+    padding-top: 2.4rem;
+}
+
+.services-table-cell:nth-child(5n+0) {
+    border-right: none;
+}
+
+.sport {
+    text-align: center;
+}
+
+.sport-title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
 }
