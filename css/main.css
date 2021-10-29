@@ -147,6 +147,7 @@ body {
     height: 0;
     padding-top: 45%;
     /* (img-height / img-width * container-width) */
+    z-index: -2;
 }
 
 .hero-box {
@@ -167,23 +168,24 @@ body {
     color: #fff;
 }
 
+
 /********************************************/
 /* SERVICES SECTION */
 /********************************************/
-
-.services-box {
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.services-part-one {
+    max-width: 114rem;
 }
 
 .services-subheading {
     margin: 7.4rem 0 2.4rem 0;
-}
-
-.blue-bull {
-    padding-top: 22px;
-    color: #26ddff;
+    text-align: center;
 }
 
 .services-description {
@@ -215,9 +217,11 @@ body {
     border-bottom: solid 1px #393b3f;
     padding-bottom: 2.4rem;
 }
+
 .services-table-cell:nth-child(1n+6) {
     border-right: solid 1px #393b3f;
     padding-top: 2.4rem;
+    padding-bottom: 1.4rem;
 }
 
 .services-table-cell:nth-child(5n+0) {
@@ -228,8 +232,79 @@ body {
     text-align: center;
 }
 
+.sport-img {
+    padding-bottom: 2.4rem;
+    height: 7.5rem;
+}
+
 .sport-title {
     font-size: 2rem;
     color: #fff;
     text-align: center;
+}
+
+.services-part-two {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/astro-astrology.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 33rem;
+}
+
+.services-part-two-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 160rem;
+}
+
+.services-articles-subheading {
+    align-self: flex-start;
+    margin-bottom: 4.8rem;
+}
+
+.services-articles-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 5rem;
+    margin-top: 4.8rem;
+}
+
+.services-articles-box--col4>.services-article-box {
+    width: calc(25% - 5rem);
+}
+
+.services-article-box {
+    background-color: #232529;
+    padding: 3.2rem;
+}
+
+.services-article--mainText {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #fff;
+    padding-bottom: 1.6rem;
+}
+
+.services-article--subtext {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 100;
+    color: #fcfefe;
+}
+
+
+.btn-all-services {
+    align-self: center;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 2rem 6.2rem;
+    margin-top: 4.8rem;
+    color: #fff;
+    /* Trick to add border in side */
+    box-shadow: inset 0 0 0 1px #fff;
 }
